@@ -1,0 +1,73 @@
+.listening-window.in-study {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    & > .v-window__container {
+        height: 100% !important;
+        .v-window-item {
+            height: inherit !important;
+            .v-sheet {
+                height: inherit !important;
+                .row {
+                    height: inherit;
+                    .col-sm-6, .col-sm-12 {
+                        padding-top: 0; 
+                        padding-bottom: 0;
+                        position: relative;
+                        &:nth-child(2n):before {
+                            content: "";
+                            position: absolute;
+                            left: 0;
+                            top: calc(40vh - 72px) !important;
+                            margin-top: - 20vh !important;
+                            height: 40vh;
+                            width: 1px;
+                            border-left: 1px solid #ccc;
+                        }
+                    }
+                    
+                    .word-wrapper {
+                        position: absolute;
+                        margin-left: -12px;
+                        margin-right: -12px;
+                        width: 100%;
+                        top : calc(40vh - 72px) !important;
+                        
+                        
+                        &.pos-left {
+                            padding-left: 20%;
+                            padding-right: 4%;
+                            margin-top: - 38% !important;
+                        }
+                        
+                        &.pos-right {
+                            padding-left: 4%;
+                            padding-right: 20%;
+                            margin-top: calc( -2.5rem - 16px) !important;
+                        }
+                        
+                        .word-img {
+                            
+                        }
+                    }
+                    
+                }
+                
+                .listening-sentence-wrapper {
+                    position: absolute;
+                    width: 100%;
+                    top : calc(40vh - 72px) !important;
+                    margin-top: calc( -3rem - 16px) !important;
+                }
+            }
+            
+            .audio-container {
+                width: 100%;
+                height: 13vh;
+                bottom: 0;
+            }
+        }
+    }
+}

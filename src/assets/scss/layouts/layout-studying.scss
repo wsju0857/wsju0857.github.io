@@ -1,0 +1,33 @@
+.body-studying {
+    margin-top: 10vh !important;
+    margin-bottom: 10vh !important;
+    padding-top: 0 !important;
+    padding-bottom: 0 !important;
+    display: flex;
+    &>.studying-contents {
+        flex-grow: 1;
+        min-height: 80vh;
+        display: flex;
+        flex-direction: column;
+        &>.v-card.elevation-0 {
+            flex-grow: 1;
+            align-items: stretch;
+        }
+    }
+    
+    @include respond-below(sm) {
+      padding-left: 5rem !important;
+      padding-right: 5rem !important;
+    }
+    
+    .v-stepper__header.elevation-0 {
+        @include respond-below(xs) {
+            > div:first-child {
+                padding-left: 0;
+            }
+            > div:last-child {
+                padding-right: 0;
+            }
+        }
+    }
+}

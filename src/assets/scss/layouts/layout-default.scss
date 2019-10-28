@@ -1,0 +1,10 @@
+#default-layout {
+    header.elevation-1 {
+        -webkit-box-shadow: 0px 1px .5px -0.5px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 0.5px 1.5px 0px rgba(0, 0, 0, 0.12) !important;
+        box-shadow: 0px 1px .5px -0.5px rgba(0, 0, 0, 0.2), 0px 1px 1px 0px rgba(0, 0, 0, 0.14), 0px 0.5px 1.5px 0px rgba(0, 0, 0, 0.12) !important;
+    }
+    .v-toolbar__title {
+        flex-direction: row;
+        display: flex;
+    }
+}

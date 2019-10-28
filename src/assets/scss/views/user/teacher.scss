@@ -1,0 +1,59 @@
+#teachervue{
+    #search{
+        font-size: 1rem;
+    }
+
+    .v-overflow-btn .v-select__selection--comma:first-child{
+        font-size: 1rem;
+    }
+
+    .searchdiv{
+        .v-input .v-input__control .v-input__slot{
+            box-shadow: none;
+        }
+    }
+
+    .optiondiv{
+        .v-input__slot[role=combobox]{
+            padding: 0;
+            box-shadow: none;
+        }
+        .v-overflow-btn .v-input__control::before{
+            height: 0;
+        }
+    }
+
+    .before-doticon{
+        .custom-left{
+            position: relative;
+            left: 20px;
+        }
+    }
+
+    .custom_simple_table{
+        table{
+            table-layout: fixed;
+        }
+    }
+
+    .v-data-table {
+        thead {
+            th {
+                height: 35px; background-color: #eeeeee; border-top: none;
+                span{
+                    font-weight: 800;
+                }
+            }
+        }
+        tr.v-data-table__expanded.v-data-table__expanded__row {
+            background-color: #E3F2FD !important;
+            td:not(:nth-child(2)){
+                color: deepskyblue !important;
+                span{
+                    color: deepskyblue !important;
+                }
+            }
+        }
+        td { height: 35px; }
+    }
+}

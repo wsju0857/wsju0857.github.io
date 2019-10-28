@@ -1,0 +1,30 @@
+#loginvue{
+    .v-text-field__slot{
+        .v-label[for=loginid], .v-label[for=password]{
+            left: 50% !important;
+            transform: translate(-50%, 0);
+        }
+        #loginid{
+            text-align: center;
+        }
+        #password {
+            text-align: center;
+            font-family: 'Inconsolata', monospace, 'NanumSquare', san-serif !important;
+        }
+    }
+
+    .v-tabs{
+        .v-slide-group{
+            display : none;
+        }
+    }
+
+    .v-input.v-text-field.v-text-field--single-line .v-label{
+        font-size: 1rem !important;
+        top: calc( 1.3rem - 10px ) !important;
+    }
+
+    .v-text-field .v-input__append-inner{
+        margin-top: 0px;
+    }
+}

@@ -1,0 +1,153 @@
+.vdp-datepicker__calendar .cell:not(.blank):not(.disabled).day:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).month:hover, .vdp-datepicker__calendar .cell:not(.blank):not(.disabled).year:hover{
+    border: 0 !important;
+}
+
+.vdp-datepicker{
+    margin: 0 0 0 0.99rem;
+    .vdp-datepicker__calendar{
+        width: 100%;
+        border: 0 !important;
+        header {
+            line-height: 30px;
+            span.prev{
+
+            }
+            span.next::after{
+                // content: '\e5cb';
+            }
+        }
+        .day__month_btn {
+            font-weight: bold;
+        }
+        .cell{
+            height: 6vh;
+            line-height: 6vh;
+            border: 0;
+            padding: 0;
+            font-weight: bold;
+            margin-bottom: 0.5vh;
+            div{
+                height: 5.7vh;
+                line-height: 5.7vh;
+                div{
+                    height: 5.6vh;
+                    line-height: 5.6vh;
+                }
+            }
+            &.day-header{
+                text-transform: uppercase;
+                border-bottom: 1px solid lightgray;
+            }
+            &.selected{
+                background: white;
+            }
+            &.selected:hover{
+                background: white;
+            }
+        }
+        div {
+            .cell{
+                .learningtoday{
+                    background-color: rgba(255, 255, 0, 0.5);
+                    border-radius: 50px;
+                }
+            }
+            .day-header{
+                padding: 0 5px;
+            }
+        }
+    }
+}
+
+#left{
+    position: relative;
+    .vdp-datepicker{
+        position: absolute;
+        height: calc(100% - (27.5% + 4.8vh));
+    }
+    .schedule_info{
+        position: absolute;
+        width: 100%;
+        bottom: 0;
+        div{
+            border-radius: 4px;
+        }
+    }
+}
+
+#right{
+    background: #e8e8e8;
+    max-height: 78vh;
+    overflow-y: auto;
+    overflow-x: hidden;
+    span{
+
+    }
+}
+
+.v-card {
+    .v-card__title{
+        font-size: 1.2rem;
+    }
+    &.v-size--x-small {
+        height: calc( 2.5 * (1rem - 6px)  ) !important;
+        &.v-btn--icon {
+            width:  calc( 2.5 * (1rem - 6px)  ) !important;
+            & .v-icon {
+                font-size: 1rem !important;
+                line-height: calc( 2.5 * (1rem - 6px)  ) !important;
+                height: calc( 2.5 * (1rem - 6px)  ) !important;
+                width: calc( 2.5 * (1rem - 6px)  ) !important;
+            }
+        }
+    }
+    &.v-size--small {
+        height: calc( 2.5 * (1rem - 4px)  ) !important;
+        &.v-btn--icon {
+            width:  calc( 2.5 * (1rem - 4px)  ) !important;
+            & .v-icon {
+                font-size: 1.1rem !important;
+                line-height: calc( 2.5 * (1rem - 4px)  ) !important;
+                height: calc( 2.5 * (1rem - 4px)  ) !important;
+                width: calc( 2.5 * (1rem - 4px)  ) !important;
+            }
+        }
+    }
+    &.v-size--default {
+        height: calc( 2.5 * (1rem - 2px)  ) !important;
+        &.v-btn--icon {
+            width:  calc( 2.5 * (1rem - 2px)  ) !important;
+            & .v-icon {
+                font-size: 1.1rem !important;
+                line-height: calc( 2.5 * (1rem - 2px)  ) !important;
+                height: calc( 2.5 * (1rem - 2px)  ) !important;
+                width: calc( 2.5 * (1rem - 2px)  ) !important;
+            }
+        }
+    }
+    &.v-size--large {
+        height: calc( 2.5 * 1rem  ) !important;
+        &.v-btn--icon {
+            width:  calc( 2.5 * 1rem ) !important;
+            & .v-icon {
+                font-size: 1.6rem !important;
+                line-height: calc( 2.5 * 1rem ) !important;
+                height: calc( 2.5 * 1rem ) !important;
+                width: calc( 2.5 * 1rem ) !important;
+            }
+        }
+    }
+    &.v-size--x-large {
+        height: calc( 2.5 * (1rem + 2px) ) !important;
+        &.v-btn--icon {
+            width:  calc( 2.5 * (1rem + 2px)  ) !important;
+            & .v-icon {
+                font-size: 1.8rem !important;
+                line-height: calc( 2.5 * (1rem + 2px)  ) !important;
+                height: calc( 2.5 * (1rem + 2px)  ) !important;
+                width: calc( 2.5 * (1rem + 2px)  ) !important;
+            }
+        }
+    }
+
+}

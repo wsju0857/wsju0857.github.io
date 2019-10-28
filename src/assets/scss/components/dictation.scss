@@ -1,0 +1,86 @@
+.dictation-window {
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    &.in-study {
+        .v-window__container {
+            height: 100% !important;
+            .v-window-item {
+                height: inherit !important;
+                .v-sheet {
+                    height: inherit !important;
+                    .row {
+                       
+                        .col-sm-12 {
+                            padding-top:0;
+                            padding-bottom: 0;
+                            display: flex;
+                            height: inherit;
+                            .chips-wrapper {
+                                border-top: 1px solid #ccc;
+                                margin: auto;
+                                width: auto;
+                                height: inherit;
+                                max-width: 100%;
+                                padding-top: 0.6rem;
+                                padding-bottom: 0.6rem;
+                                min-width: 60%;
+                            }
+        
+                           .answer-wrapper {
+                                font-family: 'Inconsolata' !important;
+                                margin: auto;
+                                width: auto;
+                                height: inherit;
+                                max-width: 100%;
+                                padding-top: 0.6rem;
+                                padding-bottom: 0.6rem;
+                                vertical-align: middle;
+                                display: -webkit-flex;
+                                display: flex;
+                                -webkit-flex-direction: row;
+                                -ms-flex-direction: row;
+                                flex-direction: row;
+                                -webkit-flex-wrap: nowrap;
+                                -ms-flex-wrap: nowrap;
+                                flex-wrap: nowrap;
+                                -webkit-justify-content: center;
+                                -ms-flex-pack: center;
+                                justify-content: center;
+                                -webkit-align-content: center;
+                                -ms-flex-line-pack: center;
+                                align-content: center;
+                                -webkit-align-items: center;
+                                -ms-flex-align: center;
+                                align-items: center;
+                                flex-flow: wrap;
+                                & > span {
+                                    -webkit-order: 0;
+                                    -ms-flex-order: 0;
+                                    order: 0;
+                                    -webkit-flex: 0 1 auto;
+                                    -ms-flex: 0 1 auto;
+                                    flex: 0 1 auto;
+                                    -webkit-align-self: auto;
+                                    -ms-flex-item-align: auto;
+                                    align-self: auto;
+                                }
+                            }
+                        }
+                        
+                        &:first-child {
+                            height: calc(40vh - 72px) !important;
+                        }
+                        &:last-child {
+                            height: 40vh !important;
+                            
+                        }
+                    }
+                }
+            }
+        }
+    }
+     
+}

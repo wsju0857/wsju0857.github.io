@@ -1,0 +1,49 @@
+.left {
+    @include respond-below(xs) {
+      width: 99px;
+    }
+    @include respond-between(xs,sm) {
+      width: 172px;
+    }
+    @include respond-between(sm,md) {
+      width: 245px;
+    }
+    @include respond-above(md) {
+      width: 348px;
+    }
+    min-height: 80vh;
+    float: left;
+    
+    .bar-container {
+        position: relative;
+        height: inherit;
+        width: inherit;
+        .option-bar {
+            position: fixed;
+            height: inherit;
+            width: inherit;
+            overflow-y: auto;
+            max-height: 79vh;
+            .option-bar-sheet {
+                min-height: 78vh;
+                margin-top: 1vh;
+                margin-right: 2%;
+                border-radius: 0;
+                padding-top: 2vh;
+            }
+        }
+    }
+    
+    .default-divider {
+        margin-top: 3vh;
+        margin-bottom: 3vh;
+        margin-left: 12%;
+        margin-right: 12%;
+        position: relative;
+    }
+    
+    .left-details {
+        padding-left: 2.5rem;
+    }
+}
+    
